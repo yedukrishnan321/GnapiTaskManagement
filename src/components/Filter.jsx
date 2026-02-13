@@ -1,0 +1,13 @@
+function Filter({filter,setFilter}) {
+    return (
+        <select
+        value={filter}
+        onChange={(e)=> setFilter(e.target.value)}>
+            <option value="all">All</option>
+            <option value="completed">Completed</option>
+            <option value="notCompleted">Not Completed</option>
+        </select>
+    );
+}
+
+export default Filter;
